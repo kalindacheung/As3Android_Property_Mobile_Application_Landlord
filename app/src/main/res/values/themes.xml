@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LandlordApp" parent="Theme.AppCompat.Light">
+        <!-- Customize your light theme here. -->
+    </style>
+
+    <style name="Theme.LandlordApp" parent="Base.Theme.LandlordApp" />
+
+
+
+</resources>

@@ -1,0 +1,209 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateListingActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Create a new item"
+        android:textColor="#000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Here are the information we need."
+        android:textColor="#777"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Property Address"
+        android:textStyle= "bold"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <EditText
+        android:id="@+id/etPropertyAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Property Address"
+        android:inputType="textPostalAddress"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+    <TextView
+        android:id="@+id/tvImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Image"
+        android:textStyle= "bold"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etPropertyAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/etImageUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Image URL"
+        android:inputType="textUri"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvImage"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <TextView
+        android:id="@+id/tvRentalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Monthly Rental Price"
+        android:textStyle= "bold"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etImageUrl"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/etRentalPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="$100.00"
+        android:inputType="numberDecimal"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRentalPrice"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <TextView
+        android:id="@+id/tvBedrooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Number of Bedrooms"
+        android:textStyle= "bold"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etRentalPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/etBedrooms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="1"
+        android:inputType="number"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBedrooms"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Status"
+        android:textStyle= "bold"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etBedrooms"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <CheckBox
+        android:id="@+id/cbStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:text="Rented"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="16sp"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toBottomOf="@id/cbStatus"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:gravity="center"
+    android:paddingTop="20dp">
+    <Button
+        android:id="@+id/btnUseCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use My Current Location"
+        android:padding="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <Button
+        android:id="@+id/btnSubmitListing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Listing"
+        android:padding="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginStart="10dp"/>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

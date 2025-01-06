@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_property.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!-- Property Image -->
+     <ImageView
+        android:id="@+id/propertyImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_background"
+         android:paddingTop="5dp"/>
+
+    <!-- Property Details -->
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp">
+
+    <TextView
+            android:id="@+id/propertyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Landlord Details"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="#000"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:id="@+id/propertyAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Property Address"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <TextView
+        android:id="@+id/propertyPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <TextView
+        android:id="@+id/propertyBedrooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bedrooms: 0"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <TextView
+        android:id="@+id/propertyStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available"
+        android:textColor="#008000"
+        android:fontFamily="@font/poppinsregular"/>
+        </LinearLayout>
+    </LinearLayout>
+
+<!--     Buttons for updating status, and deleting -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background2"
+            />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background2"
+            />
+
+    </LinearLayout>
+</LinearLayout>
